@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(48, 42, 42);
+    width:100%;
+}
+
+.nav-links{
+    min-height: 15vh;
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.links{
+    list-style-type: none;
+}
+
+.links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px;
+}
+
+.links li>a{
+    border-radius: 20px 10px 20px 10px;
+   
+}
+.links li:hover a{
+    background-color:rgb(233, 155, 10) ;
+    transition: 0.5s;
+}
+
+h1{
+    width:30%;
+    margin-left: 9px;
+    color: white;
+
+}
+#tech{
+    color: rgb(233, 155, 10);
+}
+
+.links{
+    display: flex;
+    flex-direction:row;
+    width:50%;
+    justify-content: space-around;
+}
+
+
+main{
+    min-height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.container{
+    min-height: 40vh;
+    width: 95%;
+    background-image: linear-gradient(45deg, rgb(233, 155, 10),rgb(165, 124, 48));
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px orangered;
+}
+/*---------------------This is when the screen is less than 750px-----------------*/
+@media screen and (max-width: 650px) {
+    body{
+        background-color: green;
+    }
+}
+/*---------------------This is when the screen is less than 450px-----------------*/
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color:brown;
+    }
+  }
