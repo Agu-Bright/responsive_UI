@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(48, 42, 42);
+    background-color: #2F4858;
     width:100%;
 }
 
 .nav-links{
     min-height: 15vh;
-    width: 95%;
+    min-width: 95%;
     margin-left: 2.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
+    
     
 }
 .links{
@@ -27,10 +29,12 @@ body{
     color: white;
     font-size: 1.2em;
     padding: 8px;
+    width:100px
+    
 }
 
 .links li>a{
-    border-radius: 20px 10px 20px 10px;
+    border-radius: 20px 10px 20px 10px;  
    
 }
 .links li:hover a{
@@ -38,7 +42,7 @@ body{
     transition: 0.5s;
 }
 
-h1{
+.logo{
     width:30%;
     margin-left: 9px;
     color: white;
@@ -46,6 +50,20 @@ h1{
 }
 #tech{
     color: rgb(233, 155, 10);
+    font-size: 1em;
+    
+}
+/*--This is the code for the open-bar----*/
+#bar{
+    color:rgb(233, 155, 10)  ;
+    margin-right: 50px;
+    display:none;
+}
+
+/*--This is the code for the close-bar----*/
+#close{
+    display:none;
+    color:rgb(233, 155, 10)  ;
 }
 
 .links{
@@ -58,7 +76,7 @@ h1{
 
 main{
     min-height: 100vh;
-    overflow-y: scroll;
+    
     scroll-behavior: smooth;
     
     display: flex;
@@ -75,17 +93,424 @@ main{
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 10px orangered;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.welcome{
+    color: white;
+    text-align: center;
+}
+
+#blog{
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 4px;
+    padding: 15px;
+    color: rgb(233, 155, 10);
+    background-color: #2F4858;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+
+
+#blog:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 5px #2F4858;
+}
+
+.top-blogs{
+    min-height: 60vh;
+    width:95%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #21323d;
+    margin:10px;
+}
+.story{
+    width:95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.content{
+    min-height: 45vh;
+    margin-bottom: 10px;
+    width:30%;
+    border: 3px solid orangered ;
+    border-radius: 20px 10px 20px 10px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.content:hover{
+    box-shadow:orangered 2px 2px 8px ;
+    transform: scale(1.05);
+}
+
+.topic{
+    color: white;
+    text-align: center;
+}
+.intro{
+    color:rgb(233, 155, 10);
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 3px white;
+    
+}
+.special{
+    width:40%;
+    padding-left:20px;
+}
+
+.write{
+    padding: 10px;
+    text-align: center;
+    
+   
+    color:white;
+    line-height: 1.5em;
+}
+hr{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--this is for the latest post section o fthe website--*/
+.posts{
+    margin-top: 25px;
+    min-height: auto;
+    width:95%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.article{
+    width:100%;
+    min-height: 55vh;
+    background-color:  #2F4858;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin:10px;
+    
+    overflow: hidden;
+}
+
+.article1{
+    background-color:#21323d;
+}
+
+.img{
+    width:45%;
+    min-height: 50vh;
+    background-image: linear-gradient(45deg, rgb(233, 155, 10), rgb(250, 94, 4));
+    opacity:.8;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 10px;
+}
+
+
+
+.writeup{
+    width:45%;
+    max-height: 50vh;
+    padding:20px;
+    
+    line-height: 40px;
+    text-align: center;
+    overflow:hidden;
+    color: white;
+    
+    
+}
+
+.developer{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(100deg, #2F4858,rgb(163, 87, 42), #2F4858);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev-container{
+    position: absolute;
+    min-height: 70vh;
+    width:80%;
+    border-radius: 5px;
+    background-color: #293b46;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.image{
+    background-image:url("brytoo.jpg") ;
+    background-size: cover;
+    width:225px;
+    height:400px ;
+    border:1px solid white;
+    box-shadow: 3px 3px  10px orangered;
+    opacity: .8;
+    
+}
+
+.about{
+    min-height: 400px;
+    width:50%;
+    border: 2px solid orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+    flex-direction: column;
+    
+    width: 80%;
+    min-height: 250px;
+}
+
+.about ul li{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: start;
+    
+    color:white;
+}
+.about ul li h1{
+    margin-left: -20px;
+}
+.range{
+    background-color:orangered;
+    min-height: 2vh;
+    width: 50px;
+   
+    border-radius: 5px;
+    width:200px;
+}
+
+.tired{
+    margin-bottom: 50px;
+    color:rgb(233, 155, 10)
+    
+}
+#html{
+    margin-left: -20px;
+    width: 160px;
+}
+
+#css{
+    width:140px;
+}
+
+#javascript{
+    margin-left: -50px;
+    width:110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    min-height: 50vh;
+    background-color: #263138;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------This is when the screen is less than 750px-----------------*/
 @media screen and (max-width: 650px) {
-    body{
-        background-color: green;
+    .links{
+        position:absolute;
+        width:70%;
+        height:100vh;
+        transition: 2s;
+        top: 0px;
+        right:0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(233, 155, 10, .5);
+        display: none;
+    }
+    .links li{
+        width: 100%;
+        padding:20px;
+        text-align: center;
+        margin:0px;
+    }
+    .links li:hover{
+        background-color: #2F4858;  
+    }
+
+    .fa-times-circle{
+        display:block;
+        color:rgb(233, 155, 10);
+        padding:8px;
+        background-color:#2F4858;
+        border-radius: 5px;
+    }
+
+    #close{
+        display: block;
+    }
+    #bar{
+        color:rgb(233, 155, 10)  ;
+        margin-right: 50px;
+        display:block;
+    }
+
+    /*--Top posts--*/
+    .top-blogs{
+        min-height: 100vh;
+        width:95%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #21323d;
+        margin:10px;
+    }
+    .story{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .content{
+        width:70%;
+        margin: 20px;
     }
 }
+
+
+ 
+
 /*---------------------This is when the screen is less than 450px-----------------*/
 
 @media screen and (max-width: 480px) {
-    body {
-      background-color:brown;
+    .links{
+        position:absolute;
+        width:100%;
+        height:100vh;
+        
+        top: 0px;
+        right:0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(233, 155, 10, .5);
+        display: none;
+  
     }
-  }
+
+
+}
