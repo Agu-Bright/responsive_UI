@@ -1,23 +1,13 @@
-var x = window.matchMedia("(max-width: 700px)");
-if (x.matches) { // If media query matches
-    var close = document.getElementById('close');
-    var show = document.getElementById('bar');
-    var el = document.getElementById('link');
+var close = document.getElementById('close');
+var bar = document.getElementById('bar');
+var link = document.getElementById('link');
+
+bar.addEventListener('click', function(){
+    bar.style.visibility = "hidden";
+    link.style.display = "flex";
+}, false)
+
 close.addEventListener('click', function(){
-    el.style.display = "none";
-    show.style.display = "block";
-    console.log(el);
-}, false);
-
-
-show.addEventListener('click', function(){
-    el.style.display = "block";
-    show.style.display = "none";
-}, false);
-
-
-}
-
-if (window.screen.width <)
-
-
+    link.style.display = "none";
+    bar.style.visibility = "visible";
+}, false)
