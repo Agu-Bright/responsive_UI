@@ -105,7 +105,7 @@ main{
 }
 
 .welcome{
-    color:orangered;
+    color:black;
     text-align: center;
 }
 
@@ -186,7 +186,6 @@ main{
 .write{
     padding: 10px;
     text-align: center;
-    border: 2px solid black;
    
     color:white;
     line-height: 1.5em;
@@ -451,6 +450,7 @@ footer{
         padding:20px;
         text-align: center;
         margin:0px;
+        color:black;
     }
     .links li:hover{
         background-color: #2F4858;  
@@ -492,7 +492,7 @@ footer{
        
     }
     .content{
-        width:70%;
+        width:90%;
         margin: 20px;
     }
 }
